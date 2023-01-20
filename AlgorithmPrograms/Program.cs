@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Algorithm Programs");
-            PrimeNumberareAnagramAndPalindrome obj = new PrimeNumberareAnagramAndPalindrome();
+            Console.WriteLine("Welcome to Algorithm  Programs");
+            PrimeNumbers obj = new PrimeNumbers();
             obj.PrimeNumber();
             Console.ReadLine();
         }
