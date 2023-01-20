@@ -5,17 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Algorithm Programs");
-
-            int[] array = { 51, 12, 49, 26, 85, 153, 4 };
-            MergeSortMethod objSort = new MergeSortMethod();
-
-            Console.WriteLine("\nBefore sorting array elements are: ");
-            objSort.Display(array);
-
-            objSort.Sort(array, 0, array.Length - 1);
-            Console.WriteLine("\n\nAfter sorting array elements are: ");
-            objSort.Display(array);
-
+            AnagramProgram obj = new AnagramProgram();
+            obj.AnagramDetectionProgram();
             Console.ReadLine();
         }
     }
