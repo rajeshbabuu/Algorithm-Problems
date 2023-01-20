@@ -6,18 +6,17 @@
         {
             Console.WriteLine("Welcome to Algorithm Programs");
 
-            Console.WriteLine("Enter the string : ");
-            string word = Console.ReadLine();
-            int n = word.Length;
-            string answer = " ";
+            string[] names = { "OOPS", "Array", "Dictionary", "Generics", "Delegates", "LinkedList", "Stack", "Queue", "HashTable", "Events", "Regular Expressions" };
+            InsertionSortMethod objInsertion = new InsertionSortMethod();
 
-            Console.WriteLine("\nAll possible strings are : ");
+            Console.WriteLine("\nBefore sorting array elements are: ");
+            objInsertion.Display(names);
 
-            Console.WriteLine("\nIterative Method: ");
-            PermutationOfString.Iterative(word, answer);
+            objInsertion.Sort(names);
+            Console.WriteLine("\n\nAfter sorting array elements are: ");
+            objInsertion.Display(names);
 
-            Console.WriteLine("\nRecursive Method: ");
-            PermutationOfString.Recursion(word, 0, n - 1);
+            Console.ReadLine();
         }
     }
 }
